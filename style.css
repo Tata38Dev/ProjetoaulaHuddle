@@ -1,0 +1,112 @@
+
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+p{
+  opacity: 0.8;
+  color: #fff;
+}
+
+.image{
+  max-width: 100%;
+}
+  
+.container{
+  margin: auto;
+  max-width: 100%;
+  width: 1200px;
+}
+
+.flex{
+  display: flex;
+  margin: 100px 0;
+}
+
+
+.flex > div:first-child{
+  flex: 0.6;
+  margin-right: 20px;
+}
+
+.flex > div:last-child{
+  flex: 0.4;
+  margin-left: 20px;
+}
+
+.flex > div{
+  margin-bottom: 20px;
+}
+
+button {
+  background-color:#fff;
+  border:none;
+  border-radius:50px;
+  font-size: 24px;
+  color:hwb(300 12% 24%);
+  padding:10px 50px;
+  box-shadow:0 5px 10px rgba(0, 0, 0, 3);
+}
+
+.icones {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+}
+
+.icones img {
+ text-decoration: none;
+ padding: 10px;
+ justify-content: center;
+ display: inline-flex;
+}
+
+.icones img:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 3) ;
+}
+
+.icones img:active {
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgb(51, 133, 240);
+}
+
+p{
+  padding: 20px;
+}
+
+
+@media screen and (max-width: 768px){
+.flex{
+  flex-direction: column;
+  margin: 50px 0;
+}
+.flex > div:first-child{
+  flex: 1;
+  margin-right: 0;
+}
+
+.flex > div:last-child{
+  flex: 1;
+  margin-left: 0;
+  text-align: center;
+}
+.icones{
+  justify-content: center;
+}
+
+button{
+  margin: 30px;
+}
+
+.image img{
+  width: 100%;
+}
+
+}
+
+
+
